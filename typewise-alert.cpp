@@ -1,9 +1,9 @@
 #include "common_util.h"
-#include "typewise-alert.h"
 #include "send_to_controller.h"
 #include "send_to_email.h"
 #include "temperature_monitor.h"
 #include "message_logger.h"
+#include "typewise-alert.h"
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
 {
