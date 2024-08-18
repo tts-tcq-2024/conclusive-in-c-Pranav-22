@@ -3,6 +3,7 @@
 #include "temperature_monitor.h"
 #include "typewise-alert.h"
 extern char testbuffer[10][1024];
+extern int printcount;
 
 TEST(TypeWiseAlertTestSuite,InfersBreachAccordingToLimits) {
     BatteryCharacter batteryChar;
@@ -87,4 +88,5 @@ TEST(TypeWiseAlertTestSuite,PassivecoolInfersBreachToLimitscontroller) {
     double temperatureInC = 0;
     checkAndAlert(TO_CONTROLLER, batteryChar, temperatureInC);
     EXPECT_STREQ("feed : 0",testbuffer[0]);
+    EXPECT_EQ(1,printcount);
 }
