@@ -18,19 +18,15 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
-  common_util.h
-  message_logger.c
-  send_to_controller.c
-  send_to_email.c
-  temperature_monitor.c
+  message_logger.cpp
+  send_to_controller.cpp
+  send_to_email.cpp
+  temperature_monitor.cpp
   typewise-alert.cpp
   typewise-alert.tests.cpp
 )
 target_link_libraries(
   cleancode
-  temperature_monitor.c
-  send_to_controller.c
-  send_to_email.c
   GTest::gmock_main
   gcov
 )
