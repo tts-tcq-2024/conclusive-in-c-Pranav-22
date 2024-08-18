@@ -13,7 +13,7 @@ TEST(TypeWiseAlertTestSuite,InfersBreachAccordingToLimits) {
 }
 
 
-TEST(TypeWiseAlertTestSuite,InfersBreachAccordingToLimits) {
+TEST(TypeWiseAlertTestSuite,EmailInfersBreachAccordingToLimits) {
     BatteryCharacter batteryChar;
     batteryChar.coolingType = HI_ACTIVE_COOLING;
     double temperatureInC = 50.0;
