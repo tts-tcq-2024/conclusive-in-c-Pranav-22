@@ -1,5 +1,7 @@
 #include "common_util.h"
 #include "message_logger.h"
+#include<string.h>
+#include <stdarg.h>
 
 char testbuffer[10][1024] = {0};
 int printcount = 0;
