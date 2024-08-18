@@ -23,7 +23,6 @@ typedef enum
 } BreachType;
 
 
-void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
 
