@@ -1,8 +1,5 @@
 #include "typewise-alert.h"
 #include "temperature_monitor.h"
-#include "send_to_controller.h"
-#include "send_to_email.h"
-
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
 {
