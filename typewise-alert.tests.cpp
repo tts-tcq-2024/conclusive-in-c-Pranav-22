@@ -37,3 +37,20 @@ TEST(TypeWiseAlertTestSuite,PasivecoolEmailInfersBreachToLimits) {
     checkAndAlert(TO_EMAIL, batteryChar, temperatureInC);
     EXPECT_STREQ("Hi, the temperature is too high",testbuffer[1]);
 }
+
+TEST(TypeWiseAlertTestSuite,ActivecoolInfersBreachToLimits) {
+    BatteryCharacter batteryChar;
+    batteryChar.coolingType = HI_ACTIVE_COOLING;
+    double temperatureInC = -5.0;
+    checkAndAlert(TO_CONTROLLER, batteryChar, temperatureInC);
+    EXPECT_STREQ("feed : 1",testbuffer[0]);
+}
+
+
+TEST(TypeWiseAlertTestSuite,ActivecoolEmailInfersBreachToLimits) {
+    BatteryCharacter batteryChar;
+    batteryChar.coolingType = HI_ACTIVE_COOLING;
+    double temperatureInC = -5.0;
+    checkAndAlert(TO_EMAIL, batteryChar, temperatureInC);
+    EXPECT_STREQ("Hi, the temperature is too low",testbuffer[1]);
+}
