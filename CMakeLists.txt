@@ -27,10 +27,8 @@ add_executable(
 )
 target_link_libraries(
   cleancode
-  message_logger.c
-  send_to_controller.c
-  send_to_email.c
-  temperature_monitor.c
+  message_logger.h
+  common_util.h
   GTest::gmock_main
   gcov
 )
