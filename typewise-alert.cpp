@@ -1,5 +1,5 @@
 #include "typewise-alert.h"
-#include "temperature_monitor.h"
+#include "common_util.h"
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
 {
