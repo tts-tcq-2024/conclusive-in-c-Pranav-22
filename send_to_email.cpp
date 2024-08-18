@@ -3,14 +3,14 @@
 
 void sendHighTempAlert(const char* recepient)
 {
-    print("To: %s\n", recepient);
-    print("Hi, the temperature is too high\n");
+    print("To: %s", recepient);
+    print("Hi, the temperature is too high");
 }
 
 void sendLowTempAlert(const char* recepient)
 {
-    print("To: %s\n", recepient);
-    print("Hi, the temperature is too low\n");
+    print("To: %s", recepient);
+    print("Hi, the temperature is too low");
 }
 
 void onNormalTemp(const char* recepient)
