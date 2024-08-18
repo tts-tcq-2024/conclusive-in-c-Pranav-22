@@ -1,7 +1,6 @@
 #ifndef TYPEWISE_ALERT_H
 #define TYPEWISE_ALERT_H
 
-#include "temperature_monitor.h"
 
 typedef enum {
   TO_CONTROLLER,
