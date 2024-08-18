@@ -20,6 +20,11 @@ typedef enum
   MED_ACTIVE_COOLING
 } CoolingType;
 
+typedef struct {
+  CoolingType coolingType;
+  char brand[48];
+} BatteryCharacter;
+
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
