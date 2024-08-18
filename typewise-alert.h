@@ -1,8 +1,6 @@
 #ifndef TYPEWISE_ALERT_H
 #define TYPEWISE_ALERT_H
 
-#include "common_util.h"
-
 typedef enum {
   TO_CONTROLLER,
   TO_EMAIL
