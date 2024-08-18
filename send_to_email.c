@@ -1,6 +1,5 @@
 #include "common_util.h"
 #include "message_logger.h"
-#include "send_to_email.h"
 
 void sendHighTempAlert(const char* recepient)
 {
