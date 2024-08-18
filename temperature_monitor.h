@@ -1,6 +1,8 @@
 #ifndef TEMPERATURE_MONITOR_H
 #define TEMPERATURE_MONITOR_H
 
+#include "common_util.h"
+
 typedef enum
 {
   PASSIVE_COOLING,
