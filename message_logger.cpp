@@ -15,8 +15,4 @@ void print(const char *format, ...)
     va_end(args);
     printcount++;
     count++;
-    if(count == 10)
-    {
-        count = 0;
-    }
 }
