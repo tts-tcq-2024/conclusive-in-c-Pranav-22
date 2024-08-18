@@ -1,12 +1,7 @@
 #ifndef TYPEWISE_ALERT_H
 #define TYPEWISE_ALERT_H
 
-typedef enum
-{
-  NORMAL,
-  TOO_LOW,
-  TOO_HIGH
-} BreachType;
+
 
 typedef enum
 {
