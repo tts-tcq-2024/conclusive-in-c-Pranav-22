@@ -80,6 +80,7 @@ TEST(TypeWiseAlertTestSuite,MedActivecoolEmailInfersBreachToLimitsRecepientcheck
     checkAndAlert(TO_EMAIL, batteryChar, temperatureInC);
     EXPECT_STREQ("To: a.b@c.com",testbuffer[0]);
     EXPECT_STREQ("Hi, the temperature is too high",testbuffer[1]);
+    EXPECT_EQ(2,printcount);
 }
 
 TEST(TypeWiseAlertTestSuite,PassivecoolInfersBreachToLimitscontroller) {
