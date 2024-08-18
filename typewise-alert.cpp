@@ -1,5 +1,5 @@
 #include "common_util.h"
-#inlcude "typewise-alert.h"
+#include "typewise-alert.h"
 #include "send_to_controller.h"
 #include "send_to_email.h"
 
