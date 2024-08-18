@@ -1,4 +1,3 @@
-#include "common_util.h"
 #inlcude "temperature_monitor.h"
 
 BreachType inferBreach(double value, double lowerLimit, double upperLimit)
