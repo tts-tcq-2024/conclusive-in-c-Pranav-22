@@ -1,8 +1,6 @@
 #ifndef TYPEWISE_ALERT_H
 #define TYPEWISE_ALERT_H
-#include <stdio.h>
-#include<string.h>
-#include <stdarg.h>
+
 typedef enum
 {
   NORMAL,
