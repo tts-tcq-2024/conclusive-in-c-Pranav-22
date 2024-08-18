@@ -18,5 +18,5 @@ TEST(TypeWiseAlertTestSuite,EmailInfersBreachAccordingToLimits) {
     batteryChar.coolingType = HI_ACTIVE_COOLING;
     double temperatureInC = 50.0;
     checkAndAlert(TO_EMAIL, batteryChar, temperatureInC);
-    EXPECT_STREQ("Hi, the temperature is too high",testbuffer[2]);
+    EXPECT_STREQ("Hi, the temperature is too high",testbuffer[1]);
 }
