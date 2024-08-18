@@ -13,5 +13,7 @@ typedef enum
   TOO_HIGH
 } BreachType;
 
+void sendToController(BreachType breachType);
+void sendToEmail(BreachType breachType);
 
 #endif
