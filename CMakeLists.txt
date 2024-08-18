@@ -28,6 +28,9 @@ add_executable(
 )
 target_link_libraries(
   cleancode
+  temperature_monitor.c
+  send_to_controller.c
+  send_to_email.c
   GTest::gmock_main
   gcov
 )
