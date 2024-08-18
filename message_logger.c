@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdarg.h>
-#include "common_util.h"
+#include <stdio.h>
 #include "message_logger.h"
 
 char testbuffer[10][1024];
