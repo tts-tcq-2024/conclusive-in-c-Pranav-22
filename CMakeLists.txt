@@ -18,6 +18,10 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
+  message_logger.c
+  send_to_controller.c
+  send_to_email.c
+  temperature_monitor.c
   typewise-alert.cpp
   typewise-alert.tests.cpp
 )
