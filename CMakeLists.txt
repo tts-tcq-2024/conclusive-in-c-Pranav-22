@@ -18,6 +18,7 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
+  common_util.h
   message_logger.c
   send_to_controller.c
   send_to_email.c
@@ -27,8 +28,6 @@ add_executable(
 )
 target_link_libraries(
   cleancode
-  message_logger.h
-  common_util.h
   GTest::gmock_main
   gcov
 )
