@@ -9,5 +9,5 @@ TEST(TypeWiseAlertTestSuite,InfersBreachAccordingToLimits) {
     batteryChar.coolingType = HI_ACTIVE_COOLING;
     double temperatureInC = 50.0;
     checkAndAlert(TO_CONTROLLER, batteryChar, temperatureInC);
-    ASSERT_EQ("feed : 2",testbuffer[1]);
+    ASSERT_EQ("feed : 2",testbuffer[0]);
 }
