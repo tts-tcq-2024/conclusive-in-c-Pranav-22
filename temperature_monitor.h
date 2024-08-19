@@ -10,7 +10,6 @@ typedef enum
 
 typedef struct {
   CoolingType coolingType;
-  char brand[48];
 } BatteryCharacter;
 
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
