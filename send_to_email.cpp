@@ -21,9 +21,11 @@ void onNormalTemp(const char* recepient)
 void sendToEmail(BreachType breachType)
 {
   const char* recepient = "a.b@c.com";
-
-  void (*messageType[])(const char* recepient) = {onNormalTemp,sendLowTempAlert,sendHighTempAlert};
-
-  messageType[breachType](recepient);
+    
+  if(breachType>= onNormalTemp && breachType <= sendHighTempAlert)
+  {
+     void (*messageType[])(const char* recepient) = {onNormalTemp,sendLowTempAlert,sendHighTempAlert};
+     messageType[breachType](recepient);
+  }
 
 }
